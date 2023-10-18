@@ -1,0 +1,8 @@
+.nabvar{
+    background-color: var(--primary-color) ;
+    /* //Colocar el menu de hambuergueza de manera horizontal// */
+    display: flex;
+    /* separar lo elementos con  */
+    justify-content: space-between;
+    padding: 1rem;
+}

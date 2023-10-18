@@ -1,0 +1,11 @@
+.play-wrapper{
+
+}
+.plate{
+    width: 120px;
+    height: auto;
+    padding: 1rem 0;
+}
+.plate-circle{
+    background-color: var(--primary-color);
+}
