@@ -1,4 +1,10 @@
 .play-wrapper{
+    /* Se utiliza para que todos los elemento contenidos se puedan posisionar en forma absoluta  */
+position: relative;
+display: flex;
+justify-content: center;
+/* centrar de forma vertical */
+align-items: center;
 
 }
 .plate{
@@ -8,4 +14,16 @@
 }
 .plate-circle{
     background-color: var(--primary-color);
+    /* Estilar el elemento con un ancho fijo para estilarlo */
+    width: 100%;
+    height: 100%;
+    /* propiedad absolute para que este por el fondo del plato */
+    position: absolute;
+    top: 0;
+    /* z idex para superponer un elemento */
+    z-index: -1;
+    /* circulo con berde radius */
+    border-radius: 0 0 50% 50% ;
+    /* transformar el radio  */
+    transform: translate(0, -45%);
 }
