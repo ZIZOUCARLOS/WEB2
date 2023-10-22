@@ -27,3 +27,27 @@ align-items: center;
     /* transformar el radio  */
     transform: translate(0, -45%);
 }
+
+/* la propiedad flex se utiliza en el padre, el flex ancha los elementos */
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-tittle{
+font-size: 3rem;
+
+}
+/* colocar la clase padre y anidar el elemento que le sigue
+.hero-content > button {
+    
+} */
+.hero-button{
+    background-color: var(--black-color);
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    
+}
