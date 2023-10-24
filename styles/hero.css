@@ -1,3 +1,6 @@
+.hero {
+    position: relative;
+}
 .play-wrapper{
     /* Se utiliza para que todos los elemento contenidos se puedan posisionar en forma absoluta  */
 position: relative;
@@ -33,11 +36,18 @@ align-items: center;
 .hero-content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .hero-tittle{
 font-size: 3rem;
+text-align: center;
+/* propiedad max-width: ; le dice al texto que ocupe un maximo de 400px
+ */
+ max-width: 400px;
 
 }
 /* colocar la clase padre y anidar el elemento que le sigue
@@ -49,5 +59,15 @@ font-size: 3rem;
     color: white;
     padding: 0.75em 1em;
     border-radius: 20px;
-    
+    /* //propiedad para el boton para que sea responsive fit content:; */
+    width: fit-content;
+}
+.left-floating{
+    width: 100px;
+    position: absolute;
+
+}
+.right-floating{
+    width: 100px;
+    position: absolute;
 }
