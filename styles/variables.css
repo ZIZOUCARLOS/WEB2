@@ -3,9 +3,10 @@
     --black-color: #170102;
 }
 
-body{
+main{
 font-family: "Montserrat", serif;
-
+/* overflow: se utiliza para ocultar un desborde; se utiliza cuando se esta trabajando con imagenes cortadas o flotantes */
+overflow: hidden;
 }
 
 

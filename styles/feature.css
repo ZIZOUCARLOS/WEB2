@@ -1,0 +1,33 @@
+.features-wapper{
+    /* flex para agrupar todos los elementos  */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.features{
+margin-top: 4rem;
+}
+.feature{
+    text-align: center;
+    padding: 0 1rem;
+}
+.feature > p {
+    /* background-color: red; */
+    padding: 1rem 0;
+}
+.feature > img {
+    width: 100%;
+    border-radius: 20px;
+    /* //propiedad  max-width: para indicar un ancho maximo;
+     */
+     max-width: 450px;
+     /* aspect-ratio: para colocar limite a la imagen; */
+     
+     aspect-ratio: 2/3;
+/* para que el objeto cubra el tamaño requerido */
+     object-fit: cover;
+
+}
+.feature-tittle{
+    font-size: 2rem;
+}

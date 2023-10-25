@@ -1,7 +1,10 @@
 .hero {
     position: relative;
+    /* border: 1px solid red; */
+    /* Se aumenta la parte de el padding para quelos elementos tomate y queso puedan ocupar el espacio de abajo que aparece en el Figma  */
+    padding-bottom: 4rem;
 }
-.play-wrapper{
+.plate-wrapper{
     /* Se utiliza para que todos los elemento contenidos se puedan posisionar en forma absoluta  */
 position: relative;
 display: flex;
@@ -27,7 +30,7 @@ align-items: center;
     z-index: -1;
     /* circulo con berde radius */
     border-radius: 0 0 50% 50% ;
-    /* transformar el radio  */
+    /* transformar el radio  y traslar elementos */
     transform: translate(0, -45%);
 }
 
@@ -63,11 +66,26 @@ text-align: center;
     width: fit-content;
 }
 .left-floating{
-    width: 100px;
+    width: 150px;
     position: absolute;
+    bottom: 0;
+    left: 0 ;
+    /* z-index: para super poner elementos; */
+    z-index: -1;
+    transform: rotate(15deg) translate(-10%, 20%) ;
+    /* translate: comando para mover los elementos; */
 
 }
 .right-floating{
-    width: 100px;
+    width: 120px;
     position: absolute;
+    bottom: 0;
+    right: 0 ;
+    z-index: -1;
+    /* transforme se utiliza para trasladar y rotar un elemento */
+    transform: rotate(-15deg) translate(10%, 30%) ;
+}
+.logo-bar{
+    position: absolute;
+    top: 0;
 }
