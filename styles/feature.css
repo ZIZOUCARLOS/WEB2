@@ -31,3 +31,11 @@ margin-top: 4rem;
 .feature-tittle{
     font-size: 2rem;
 }
+/* Para trasformar los elementos en darle estilo al momento de pasar a tablet */
+@media (min-width: 768px) {
+    .features-wapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}

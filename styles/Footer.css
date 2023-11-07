@@ -1,0 +1,57 @@
+.Footer{
+/* //para mover todo de manera horizontal con display: flex; */
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-weight: 500;
+margin-top: 48px;
+/* gap  nos permite determinar los espaciados entre los elementos */
+gap: 2rem;
+position: relative;
+/* Propiedar overflow: se utiliza para ocultar el exeso en footer; */
+overflow: hidden;
+
+}
+/* para uscar un hijo dentro de la clase > */
+/* en este caso se utiliza solamente la (a) por que esta en unos niveles mas anidados */
+.links a {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+}
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.copyright{
+    font-family: Montserrat ;
+}
+.copyright p {
+    padding: 0.25rem 0;
+}
+.footer-circle{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    bottom: -120;
+    z-index: -2;
+    background-color: var(--primary-color);
+    border-radius: 50% 50% 0 0 ;
+}
+.footer-floating{
+    /* position absolute se utiliza para hacer que el elemento flote */
+    position: absolute;
+    width: 140px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%,30%);
+    z-index: -1;
+}
+.brand-copy{
+font-weight: bold;
+}
